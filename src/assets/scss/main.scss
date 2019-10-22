@@ -1,0 +1,54 @@
+// @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import "./_variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+}
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  @extend .page-section;
+  min-height: 100vh;
+  background: $darkBgColor;
+  color: $darkBgFontColor;
+  transition: color 1s, background 1s;
+
+  .section-container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 50em;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+.intro-title-wrapper {
+  padding-top: 15vh;
+  transition: padding-top 0.5s;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .heading {
+    font-size: 5rem;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    transition: font-size 0.5s;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    transition: font-size 0.5s;
+  }
+}
