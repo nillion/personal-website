@@ -1,4 +1,4 @@
-import '../assets/scss/main.scss';
+import '../../assets/scss/main.scss';
 
 import PropTypes from 'prop-types';
 import React from 'react';
