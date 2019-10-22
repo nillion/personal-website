@@ -24,6 +24,7 @@
   "devDependencies": {
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.20",
+    "eslint-config-react-app": "^5.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
@@ -39,7 +40,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
