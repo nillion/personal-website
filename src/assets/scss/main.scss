@@ -1,13 +1,14 @@
 // @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
 @import "./_variables";
+@import "./utils";
 
 body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: 400;
 }
 
