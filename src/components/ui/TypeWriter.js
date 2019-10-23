@@ -6,7 +6,8 @@ class TypeWriter extends Component {
         super(props);
         this.state = {
             index: 0,
-            displayedText: ''
+            displayedText: '',
+            isDone: false
         };
     }
 
@@ -30,15 +31,29 @@ class TypeWriter extends Component {
                     this.type();
                 }, speed);
             });
+        } else {
+            setTimeout(() => this.setState({ isDone: true }), 3000);
         }
 
     }
 
     render() {
-        const { displayedText } = this.state;
-        return (
-            <span>{displayedText}</span>
-        );
+        const { displayedText, isDone } = this.state;
+
+        if (!isDone) {
+            return (
+                <span>
+                    {displayedText}
+                    <span className="blink-text">|</span>
+                </span>
+            );
+        } else {
+            return (
+                <span>
+                    {displayedText}
+                </span>
+            )
+        }
     }
 }
 

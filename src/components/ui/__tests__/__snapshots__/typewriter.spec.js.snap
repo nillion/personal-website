@@ -3,5 +3,10 @@
 exports[`TypeWriter renders correctly 1`] = `
 <span>
   T
+  <span
+    className="blink-text"
+  >
+    |
+  </span>
 </span>
 `;
