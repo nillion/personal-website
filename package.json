@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "personal-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Arjun Sawhney <arjun7692@gmail.com>",
   "dependencies": {
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
@@ -22,7 +22,15 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.20",
+    "eslint-config-react-app": "^5.0.2",
+    "husky": "^3.0.9",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.10.2"
   },
   "keywords": [
     "gatsby"
@@ -34,13 +42,17 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/nillion/personal-website"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm test"
+    }
   }
 }
