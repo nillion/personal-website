@@ -16,7 +16,7 @@ const IndexPage = () => (
         </section>
         <nav className="main-navigation">
             <ul>
-                <li>
+                {/* <li>
                     <a href="#about" className="main-navigation-link">
                         <FontAwesomeIcon icon={faUser} className="main-navigation-link-icon" />
                         <span className="main-navigation-link-label">About</span>
@@ -27,21 +27,21 @@ const IndexPage = () => (
                         <FontAwesomeIcon icon={faNewspaper} className="main-navigation-link-icon" />
                         <span className="main-navigation-link-label">Resume</span>
                     </a>
-                </li>
+                </li> */}
                 <li>
-                    <a href="#github" className="main-navigation-link">
+                    <a href="https://github.com/nillion/" target="_blank" rel="noopener noreferrer" className="main-navigation-link">
                         <FontAwesomeIcon icon={faGithub} className="main-navigation-link-icon" />
                         <span className="main-navigation-link-label">Github</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#linkedin" className="main-navigation-link">
+                    <a href="https://www.linkedin.com/in/arjun-sawhney/" target="_blank" rel="noopener noreferrer" className="main-navigation-link">
                         <FontAwesomeIcon icon={faLinkedin} className="main-navigation-link-icon" />
                         <span className="main-navigation-link-label">LinkedIn</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" className="main-navigation-link">
+                    <a href="mailto:arjun7692@gmail.com" className="main-navigation-link">
                         <FontAwesomeIcon icon={faEnvelope} className="main-navigation-link-icon" />
                         <span className="main-navigation-link-label">Contact</span>
                     </a>

@@ -35,65 +35,9 @@ exports[`IndexPage renders correctly 1`] = `
         <li>
           <a
             className="main-navigation-link"
-            href="#about"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-user fa-w-14 main-navigation-link-icon"
-              data-icon="user"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            <span
-              className="main-navigation-link-label"
-            >
-              About
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            className="main-navigation-link"
-            href="#resume"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-newspaper fa-w-18 main-navigation-link-icon"
-              data-icon="newspaper"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            <span
-              className="main-navigation-link-label"
-            >
-              Resume
-            </span>
-          </a>
-        </li>
-        <li>
-          <a
-            className="main-navigation-link"
-            href="#github"
+            href="https://github.com/nillion/"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <svg
               aria-hidden="true"
@@ -122,7 +66,9 @@ exports[`IndexPage renders correctly 1`] = `
         <li>
           <a
             className="main-navigation-link"
-            href="#linkedin"
+            href="https://www.linkedin.com/in/arjun-sawhney/"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <svg
               aria-hidden="true"
@@ -151,7 +97,7 @@ exports[`IndexPage renders correctly 1`] = `
         <li>
           <a
             className="main-navigation-link"
-            href="#contact"
+            href="mailto:arjun7692@gmail.com"
           >
             <svg
               aria-hidden="true"
