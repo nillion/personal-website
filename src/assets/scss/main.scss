@@ -53,3 +53,43 @@ body {
     transition: font-size 0.5s;
   }
 }
+
+.main-navigation {
+  @extend .page-section;
+  padding-bottom: 10vh;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: color 1s;
+
+      .main-navigation-link {
+        font-size: $fontNormal;
+        font-weight: 400;
+        color: $darkBgFontColor;
+        text-decoration: none;
+
+        .main-navigation-link-icon {
+          font-size: $fontMedium;
+        }
+
+        .main-navigation-link-label {
+          display: block;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
