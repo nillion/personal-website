@@ -5,11 +5,13 @@ import React from 'react';
 
 const Layout = ({ children }) => {
     return (
-        <main
-            className="main-container"
-        >
-            <section className="section-container">{children}</section>
-        </main>
+        <React.StrictMode>
+            <main
+                className="main-container"
+            >
+                <section className="section-container">{children}</section>
+            </main>
+        </React.StrictMode>
     )
 }
 
