@@ -39,16 +39,17 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 60vh;
 
   .heading {
-    font-size: 5rem;
+    font-size: $fontBig;
     font-family: "Vollkorn", serif;
     font-weight: 400;
     transition: font-size 0.5s;
   }
 
   .sub-heading {
-    font-size: 2rem;
+    font-size: $fontMedium;
     font-weight: 300;
     transition: font-size 0.5s;
   }
