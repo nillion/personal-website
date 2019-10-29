@@ -1,7 +1,11 @@
 import '../../assets/scss/main.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
+import { config } from '@fortawesome/fontawesome-svg-core';
 import PropTypes from 'prop-types';
 import React from 'react';
+
+config.autoAddCss = false;
 
 const Layout = ({ children }) => {
     return (
