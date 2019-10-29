@@ -94,3 +94,26 @@ body {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .main-container {
+    background: $darkBgColor;
+    color: $darkBgFontColor;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .main-container {
+    background: $lightBgColor;
+    color: $lightBgFontColor;
+  }
+  .main-navigation {
+    ul {
+      li {
+        .main-navigation-link {
+          color: $lightBgFontColor;
+        }
+      }
+    }
+  }
+}
